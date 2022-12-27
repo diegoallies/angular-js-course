@@ -5,14 +5,18 @@
     <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
     <script src="/app/lib/angular.min.js"></script>
   </head>
-  <body ng-init="meats=['pork', 'ham', 'beef', 'cassidy']">
+  <body ng-init="ninjas=['yoshi', 'crystal', 'ryu' , 'Cassidy']">
 
     <input type="text" ng-model="favMeat" placeholder="Enter your fav meat">
     <p>Your fav meat is {{favMeat}}  </p>
-    <p>You love {{  meats[3]  }} </p>
+    <!-- <p>You love {{  meats[3]  }} </p> -->
+    <p class="{{color}}">sup guys</p>
     <!-- <ninja></ninja> -->
     <!-- <main ng view>
     </main> -->
+    <li ng-repeat="ninja in ninjas">{{ninja}}</li>
+
+
 
   </body>
 </html>
